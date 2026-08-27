@@ -1,0 +1,29 @@
+# Borra el rastro de deploys anteriores: los registros de deployments y los
+# runs viejos mantienen accesibles por SHA versiones anteriores del sitio.
+name: Limpiar historial de deploys
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+permissions:
+  actions: write
+  deployments: write
+jobs:
+  limpiar:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+    steps:
+      - name: Borrar deployments viejos
+        run: |
+          for id in $(gh api "repos/$REPO/deployments" --jq '.[1:][].id'); do
+            gh api -X POST "repos/$REPO/deployments/$id/statuses" -f state=inactive >/dev/null
+            gh api -X DELETE "repos/$REPO/deployments/$id"
+          done
+      - name: Borrar runs viejos
+        run: |
+          for id in $(gh api "repos/$REPO/actions/runs?per_page=100" \
+              --jq '[.workflow_runs[] | select(.status == "completed")] | .[1:][].id'); do
+            gh api -X DELETE "repos/$REPO/actions/runs/$id"
+          done
