@@ -1,0 +1,3 @@
+Completar una clase y probarla con tests y una aplicación interactiva.
+
+*Practicamos: clases, instancias, métodos, variables de instancia, constructor.*

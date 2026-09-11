@@ -1,0 +1,3 @@
+Modelar el dominio de un servicio de recolección con facturas y bonificaciones.
+
+*Practicamos: conceptos candidatos, modelo de dominio en UML, atributos y asociaciones.*

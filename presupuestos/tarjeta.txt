@@ -1,0 +1,3 @@
+Implementar en Java un diagrama UML con un presupuesto y sus ítems.
+
+*Practicamos: leer UML, implementar clases, relaciones 1-a-muchos con colecciones, delegación.*
