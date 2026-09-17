@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 110" font-family="Georgia, 'Times New Roman', serif" font-size="26">
+  <text x="10" y="65" fill="black">índice de separación =</text>
+  <text x="480" y="40" text-anchor="middle" fill="black">residuos reciclables</text>
+  <line x1="290" y1="55" x2="670" y2="55" stroke="black" stroke-width="1.5"/>
+  <text x="480" y="90" text-anchor="middle" fill="black">residuos comunes + residuos reciclables</text>
+</svg>

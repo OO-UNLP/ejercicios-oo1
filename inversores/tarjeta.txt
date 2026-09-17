@@ -1,0 +1,3 @@
+Modelar el dominio de una app de inversiones en acciones y plazos fijos.
+
+*Practicamos: conceptos candidatos, modelo de dominio en UML, atributos y asociaciones.*
