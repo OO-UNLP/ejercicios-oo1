@@ -1,0 +1,3 @@
+Tres clases cuyas instancias colaboran entre sí y hacen cálculos.
+
+*Practicamos: constructores con parámetros, objetos como parámetros, envío de mensajes entre objetos.*
