@@ -1,0 +1,3 @@
+Construir cuerpos 3D a partir de figuras 2D y calcular su volumen y superficie.
+
+*Practicamos: leer UML, composición, delegación, polimorfismo.*

@@ -1,0 +1,3 @@
+Hacer que la balanza y el ticket recuerden los productos en una colección.
+
+*Practicamos: colecciones, referencias a objetos, delegación, constructores, encapsulamiento.*
