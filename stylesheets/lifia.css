@@ -1,0 +1,35 @@
+/* Paleta LIFIA: azul institucional + naranja del logo */
+:root {
+  --md-primary-fg-color: #004061;
+  --md-primary-fg-color--light: #117bb8;
+  --md-primary-fg-color--dark: #002c44;
+  --md-accent-fg-color: #f07000;
+  --md-typeset-a-color: #117bb8;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #004061;
+  --md-typeset-a-color: #4aa3d8;
+}
+
+/* Las cajas (admonitions y bloques desplegables) usan el mismo tamaño de
+   letra que el texto normal; el theme las achica a 0.64rem. */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: inherit;
+}
+
+/* Títulos de sección más legibles: por defecto h4 mide igual que el texto
+   y h5/h6 quedan más chicos, grises y en mayúsculas. */
+.md-typeset h3 {
+  font-size: 1.35em;
+}
+.md-typeset h4 {
+  font-size: 1.15em;
+}
+.md-typeset h5,
+.md-typeset h6 {
+  font-size: 1em;
+  text-transform: none;
+  color: var(--md-default-fg-color);
+}

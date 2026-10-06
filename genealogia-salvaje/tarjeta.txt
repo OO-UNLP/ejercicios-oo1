@@ -1,0 +1,3 @@
+Registrar los mamíferos de una reserva y sus familias, y buscar ancestros.
+
+*Practicamos: referencias a instancias de la misma clase, delegación, manejo de null.*

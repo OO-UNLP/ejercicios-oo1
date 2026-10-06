@@ -1,0 +1,3 @@
+Modelar el dominio de una plataforma de compra y venta de videos.
+
+*Practicamos: conceptos candidatos, modelo de dominio en UML, atributos y asociaciones.*
